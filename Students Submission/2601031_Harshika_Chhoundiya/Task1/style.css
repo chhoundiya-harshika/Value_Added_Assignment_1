@@ -1,0 +1,553 @@
+/*  BASIC RESET
+*/
+/* Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+
+    color: #101426;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 5.7%;
+
+    border-bottom: 1px solid #eeeeee;
+
+    background-color: white;
+}
+
+
+/* Logo area */
+.logo-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* Graduation cap */
+.logo-section img {
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: contain;
+}
+
+
+/* DSA Tracker text */
+.logo-section h2 {
+    font-size: 30px;
+
+    color: #17204a;
+
+    font-weight: 700;
+}
+
+
+/*NAVIGATION LINKS*/
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: #414b68;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    padding: 36px 0 28px;
+
+    position: relative;
+}
+
+
+/* Active Home link */
+nav a.active {
+    color: #5425c7;
+
+    font-weight: 700;
+}
+
+
+/* Purple line under Home */
+nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 83px;
+
+    height: 5px;
+
+    background-color: #6330d8;
+
+    border-radius: 10px;
+}
+
+
+/* GET STARTED BUTTON*/
+
+.get-started {
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #6330d8,
+        #4e22b8
+    );
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    padding: 16px 25px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 608px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 55px 5.7% 45px;
+
+    background-color: white;
+}
+
+
+/* Left side of hero */
+.hero-content {
+    width: 48%;
+}
+
+
+/* Main heading */
+.hero-content h1 {
+    font-size: 62px;
+
+    line-height: 1.13;
+
+    font-weight: 800;
+
+    color: #111522;
+
+    margin-bottom: 24px;
+}
+
+
+/* Purple "Job Ready" */
+.hero-content h1 span {
+    color: #5526c7;
+}
+
+
+/* Description */
+.hero-content p {
+    color: #5e6888;
+
+    font-size: 25px;
+
+    line-height: 1.5;
+
+    max-width: 650px;
+
+    margin-bottom: 35px;
+}
+
+
+/*HERO BUTTONS*/
+
+.buttons {
+    display: flex;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+/* First button */
+.primary-btn {
+    background: linear-gradient(
+        135deg,
+        #6330d8,
+        #4f20ba
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 18px 37px;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(89, 40, 200, 0.15);
+}
+
+
+/* Arrow */
+.primary-btn span {
+    margin-left: 15px;
+
+    font-size: 28px;
+}
+
+
+/* Second button */
+.secondary-btn {
+    background-color: white;
+
+    color: #5125c4;
+
+    border: 2px solid #6330d8;
+
+    padding: 16px 37px;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+
+/*HERO IMAGE*/
+
+.hero-image {
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Student illustration */
+.hero-image img {
+    width: 100%;
+
+    max-width: 680px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/*FEATURES SECTION*/
+
+.features {
+    min-height: 315px;
+
+    background-color: #faf9ff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 50px 3.8%;
+}
+
+
+/* FEATURE CARD */
+
+.feature-card {
+    width: 32%;
+
+    min-height: 215px;
+
+    background-color: white;
+
+    border: 1px solid #e6e3f1;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(30, 20, 80, 0.06);
+
+    padding: 25px;
+}
+
+
+/* Feature image */
+.feature-card img {
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    margin-bottom: 12px;
+}
+
+
+/* Feature heading */
+.feature-card h2 {
+    font-size: 29px;
+
+    color: #101522;
+
+    margin-bottom: 10px;
+}
+
+
+/* Feature description */
+.feature-card p {
+    font-size: 22px;
+
+    color: #40424b;
+}
+
+
+/*HOVER EFFECTS*/
+
+.get-started:hover,
+.primary-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(89, 40, 200, 0.25);
+}
+
+
+.secondary-btn:hover {
+    background-color: #6330d8;
+
+    color: white;
+}
+
+
+nav a:hover {
+    color: #5425c7;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    transition: 0.3s;
+}
+
+
+/* RESPONSIVE DESIG*/
+
+/* For tablets and smaller screens */
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 50px 30px;
+
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .features {
+        padding: 40px 30px;
+    }
+}
+
+
+/* For mobile phones */
+@media (max-width: 700px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .logo-section h2 {
+        font-size: 25px;
+    }
+
+
+    nav {
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    nav a {
+        font-size: 16px;
+
+        padding: 5px;
+    }
+
+
+    nav a.active::after {
+        display: none;
+    }
+
+
+    .get-started {
+        font-size: 16px;
+
+        padding: 12px 20px;
+    }
+
+
+    /* Hero */
+    .hero {
+        padding: 40px 20px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        font-size: 18px;
+    }
+
+
+    .hero-image img {
+        width: 100%;
+    }
+
+
+    /* Features */
+    .features {
+        flex-direction: column;
+
+        padding: 30px 20px;
+    }
+
+
+    .feature-card {
+        width: 100%;
+    }
+}
