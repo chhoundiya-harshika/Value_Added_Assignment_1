@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- -->
+  <div class="sidebar">
+    <div class="logo-box">
+      <img src="images/17.jpeg" alt="Student Portal Logo" class="logo-img">
+      <h2>Student<br>Portal</h2>
+    </div>
+
+    <ul class="menu">
+      <li class="active">
+        <a href="#">
+          <img src="images/13.jpeg" alt="Dashboard" class="menu-img"> Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/12.jpeg" alt="Assignments" class="menu-img"> Assignments
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/04.jpeg" alt="Courses" class="menu-img"> Courses
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/10.jpeg" alt="Progress" class="menu-img"> Progress
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/09.jpeg" alt="Profile" class="menu-img"> Profile
+        </a>
+      </li>
+    </ul>
+
+    <hr class="divider">
+
+    <ul class="menu">
+      <li>
+        <a href="#">
+          <img src="images/20.jpeg" alt="Logout" class="menu-img"> Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- RIGHT MAIN AREA -->
+  <div class="main-area">
+
+    <!-- Top Header Bar -->
+    <div class="header">
+      <h1>Dashboard</h1>
+
+      <div class="user-info">
+        <img src="images/16.jpeg" alt="Notifications" class="bell-img">
+        <div class="avatar">
+          <img src="images/15.jpg" alt="Harshika">
+        </div>
+        <span class="username">Harshika ▾</span>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+
+      <!-- Welcome Banner -->
+      <div class="banner">
+        <div class="banner-text">
+          <h2>Welcome Back, Prathmesh! 👋</h2>
+          <p>Continue your learning journey and complete your pending assignments.</p>
+        </div>
+        <img src="images/18.jpeg" alt="Learning Illustration" class="banner-img">
+      </div>
+
+      <!-- 4 Summary Cards -->
+      <div class="stats-row">
+        <div class="stat-card purple-bg">
+          <img src="images/04.jpeg" alt="Courses">
+          <div>
+            <h3>3</h3>
+            <p>Courses</p>
+          </div>
+        </div>
+
+        <div class="stat-card green-bg">
+          <img src="images/03.jpeg" alt="Assignments">
+          <div>
+            <h3>12</h3>
+            <p>Assignments</p>
+          </div>
+        </div>
+
+        <div class="stat-card yellow-bg">
+          <img src="images/02.jpeg" alt="Progress">
+          <div>
+            <h3>78%</h3>
+            <p>Progress</p>
+          </div>
+        </div>
+
+        <div class="stat-card pink-bg">
+          <img src="images/01.jpeg" alt="Due This Week">
+          <div>
+            <h3>5</h3>
+            <p>Due This Week</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Two Boxes -->
+      <div class="bottom-row">
+
+        <!-- Left Box: Your Courses -->
+        <div class="white-box">
+          <h3>Your Courses</h3>
+
+          <div class="list-item">
+            <div class="item-left">
+              <img src="images/09.jpeg" alt="Web Development">
+              <div>
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+            <div class="progress-box">
+              <span>80%</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="item-left">
+              <img src="images/06.jpeg" alt="Python Programming">
+              <div>
+                <h4>Python Programming</h4>
+                <p>Basics to Advanced</p>
+              </div>
+            </div>
+            <div class="progress-box">
+              <span>70%</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item no-border">
+            <div class="item-left">
+              <img src="images/05.jpeg" alt="Database Systems">
+              <div>
+                <h4>Database Systems</h4>
+                <p>SQL, Normalization, Queries</p>
+              </div>
+            </div>
+            <div class="progress-box">
+              <span>85%</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Box: Upcoming Assignments -->
+        <div class="white-box">
+          <h3>Upcoming Assignments</h3>
+
+          <div class="list-item">
+            <div class="item-left">
+              <img src="images/14.jpeg" alt="Assignment" class="doc-img">
+              <div>
+                <h4>Create a Responsive Landing Page</h4>
+                <p>Due: 20 Nov 2026</p>
+              </div>
+            </div>
+            <span class="pending-badge">Pending</span>
+          </div>
+
+          <div class="list-item">
+            <div class="item-left">
+              <img src="images/14.jpeg" alt="Assignment" class="doc-img">
+              <div>
+                <h4>Array Problem Set</h4>
+                <p>Due: 22 Nov 2026</p>
+              </div>
+            </div>
+            <span class="pending-badge">Pending</span>
+          </div>
+
+          <div class="list-item no-border">
+            <div class="item-left">
+              <img src="images/14.jpeg" alt="Assignment" class="doc-img">
+              <div>
+                <h4>DBMS SQL Queries</h4>
+                <p>Due: 25 Nov 2026</p>
+              </div>
+            </div>
+            <span class="pending-badge">Pending</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
